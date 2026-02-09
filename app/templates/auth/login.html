@@ -8,21 +8,21 @@
 
         <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Iniciar Sesion</h2>
 
-        <form action="" method="POST" class="space-y-4">
+        <form action="{{ url_for('auth.login_auth') }}" method="POST" class="space-y-4">
 
             <div>
 
-                <label class="block text-sm font-medium text-gray-700">Usuario</label>
+                <label class="text-sm font-medium text-gray-700" name="numero_telefono">Numero Telefono</label>
 
-                <input type="text" name="" id="" class="w-full mt-1 p-2 border rounded-md focus:ring-blue-500">
+                <input type="text" name="numero_telefono" id="" class="w-full mt-1 p-2 border rounded-md focus:ring-blue-500" >
 
             </div>
 
             <div>
 
-                <label class="block text-sm font-medium text-gray-700">Contraseña</label>
+                <label class="text-sm font-medium text-gray-700" name="contraseña">Contraseña</label>
 
-                <input type="password" class="w-full mt-1 p-2 border rounded-md">
+                <input type="password" class="w-full mt-1 p-2 border rounded-md" name="contraseña">
 
             </div>
 

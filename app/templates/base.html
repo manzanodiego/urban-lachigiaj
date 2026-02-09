@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="{{url_for('static',filename='dist/output.css')}}">
 </head>
 
-<body class="grid grid-rows-[auto_1fr_auto] min-height-screen min-h-screen bg-gray-100">
+<body class="grid grid-rows-[auto_1fr_auto] min-height-screen min-h-screen bg-gray-100 font-sans">
     
     <header>
         {% include 'header.html' %}
     </header>
 
-    <main class="container">
+    <!--container mx-auto px-4-->
+    <main class="container mx-auto px-4">
 
         {% block content %} {% endblock %}
 

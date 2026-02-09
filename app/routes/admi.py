@@ -7,3 +7,8 @@ bp = Blueprint('admi', __name__, url_prefix='/admi')
 @bp.route('/')
 def index():
     return render_template('index.html')
+
+
+@bp.route('/dashboard')
+def dashboard():
+    return render_template('admi/dashboard.html')
